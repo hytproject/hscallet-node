@@ -1,7 +1,7 @@
-const Scallet = require('../index')
+const hscallet = require('../index')
 
-/* Initialize scallet wrapper */
-const api = new Scallet({
+/* Initialize hscallet wrapper */
+const api = new hscallet({
     key: process.env.API_KEY,
     pass: process.env.API_PASS,
     logging: false
@@ -9,13 +9,13 @@ const api = new Scallet({
 
 async function main() {
     try {
-        /* Test ScalaPrice */
-        const price = await api.scalaPrice()
-        console.log("[Promised] ScalaPrice:", price)
+        /* Test HytPrice */
+        const price = await api.HytPrice()
+        console.log("[Promised] HytPrice:", price)
 
-        /*  api.scalaPrice((err, data) => {
+        /*  api.HytPrice((err, data) => {
             if (err) return console.log("Error", err)
-            console.log("[Callback] ScalaPrice", data)
+            console.log("[Callback] HytPrice", data)
          }) */
 
         /* Test User */
@@ -24,7 +24,7 @@ async function main() {
 
         /*  api.getUser((err, data) => {
             if (err) return console.log("Error", err)
-            console.log("[Callback] ScalaPrice", data.user.name)
+            console.log("[Callback] HytPrice", data.user.name)
         }) */
 
         /* Post Shortlink */

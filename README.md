@@ -1,4 +1,4 @@
-# scallet-node
- Scallet API NPM package
+# hscallet-node
 
-Documentation + code is WIP :)
+ hscallet API NPM package
+

@@ -1,1 +1,1 @@
-module.exports = require('./lib/scallet')
+module.exports = require('./lib/hscallet')
